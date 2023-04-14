@@ -7,7 +7,7 @@ public class Solution {
         foreach(int num in numbers)
             answer += num;
         
-        answer = answer / numbers.Length;
+        answer /= numbers.Length;
         
         return answer;
     }
