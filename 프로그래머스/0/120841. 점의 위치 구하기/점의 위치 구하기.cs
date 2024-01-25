@@ -10,7 +10,7 @@ public class Solution {
             answer = 2;
         else if(dot[0] < 0 && dot[1] < 0)
             answer = 3;
-        else if(dot[0] > 0 && dot[1] < 0)
+        else
             answer = 4;
         
         return answer;
