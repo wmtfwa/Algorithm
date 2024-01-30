@@ -6,16 +6,12 @@ public class Solution {
         
         for(int i = 0; i < arr.Length; i++)
         {
-            if(arr[i] < 50)
-                if(arr[i] % 2 == 1)
-                    answer[i] = arr[i]*2;
-                else
-                    answer[i] = arr[i];
+            if(arr[i] < 50 && arr[i] % 2 == 1)
+                answer[i] = arr[i]*2;
+            else if(arr[i] >= 50 & arr[i] % 2 == 0)
+                answer[i] = arr[i]/2;
             else
-                if(arr[i] % 2 == 0)
-                    answer[i] = arr[i]/2;
-                else
-                    answer[i] = arr[i];
+                answer[i] = arr[i];
         }
         
         return answer;
